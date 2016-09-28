@@ -1,0 +1,126 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'S:\\node.js\\node.exe',
+1 verbose cli   'S:\\node.js\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   'browser-sync' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose install initial load of E:\Media\Bootstrap\package.json
+5 warn package.json ecommerce@1.0.0 No repository field.
+6 warn package.json ecommerce@1.0.0 No README data
+7 verbose installManyTop reading scoped package data from E:\Media\Bootstrap\node_modules\gulp\package.json
+8 verbose readDependencies loading dependencies from E:\Media\Bootstrap\package.json
+9 silly cache add args [ 'browser-sync', null ]
+10 verbose cache add spec browser-sync
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'browser-sync',
+11 silly cache add   scope: null,
+11 silly cache add   name: 'browser-sync',
+11 silly cache add   rawSpec: '',
+11 silly cache add   spec: 'latest',
+11 silly cache add   type: 'tag' }
+12 silly addNamed browser-sync@latest
+13 verbose addNamed "latest" is being treated as a dist-tag for browser-sync
+14 info addNameTag [ 'browser-sync', 'latest' ]
+15 silly mapToRegistry name browser-sync
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry data Result {
+18 silly mapToRegistry   raw: 'browser-sync',
+18 silly mapToRegistry   scope: null,
+18 silly mapToRegistry   name: 'browser-sync',
+18 silly mapToRegistry   rawSpec: '',
+18 silly mapToRegistry   spec: 'latest',
+18 silly mapToRegistry   type: 'tag' }
+19 silly mapToRegistry uri https://registry.npmjs.org/browser-sync
+20 verbose addNameTag registry:https://registry.npmjs.org/browser-sync not in flight; fetching
+21 verbose request uri https://registry.npmjs.org/browser-sync
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 10:17:49 PM
+24 verbose request id a5ae55a427a59a93
+25 verbose etag "87W6DJ7FZD0U7OJ18IB0A6355"
+26 http request GET https://registry.npmjs.org/browser-sync
+27 http 200 https://registry.npmjs.org/browser-sync
+28 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+28 verbose headers   etag: '"DZJ1C913CM4CFL3E1NJOZZ0PW"',
+28 verbose headers   'content-type': 'application/json',
+28 verbose headers   'content-encoding': 'gzip',
+28 verbose headers   'cache-control': 'max-age=300',
+28 verbose headers   'content-length': '41267',
+28 verbose headers   'accept-ranges': 'bytes',
+28 verbose headers   date: 'Tue, 27 Sep 2016 16:47:46 GMT',
+28 verbose headers   via: '1.1 varnish',
+28 verbose headers   age: '88',
+28 verbose headers   connection: 'keep-alive',
+28 verbose headers   'x-served-by': 'cache-fra1244-FRA',
+28 verbose headers   'x-cache': 'HIT',
+28 verbose headers   'x-cache-hits': '4',
+28 verbose headers   'x-timer': 'S1474994866.861362,VS0,VE0',
+28 verbose headers   vary: 'Accept-Encoding' }
+29 silly get cb [ 200,
+29 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+29 silly get     etag: '"DZJ1C913CM4CFL3E1NJOZZ0PW"',
+29 silly get     'content-type': 'application/json',
+29 silly get     'content-encoding': 'gzip',
+29 silly get     'cache-control': 'max-age=300',
+29 silly get     'content-length': '41267',
+29 silly get     'accept-ranges': 'bytes',
+29 silly get     date: 'Tue, 27 Sep 2016 16:47:46 GMT',
+29 silly get     via: '1.1 varnish',
+29 silly get     age: '88',
+29 silly get     connection: 'keep-alive',
+29 silly get     'x-served-by': 'cache-fra1244-FRA',
+29 silly get     'x-cache': 'HIT',
+29 silly get     'x-cache-hits': '4',
+29 silly get     'x-timer': 'S1474994866.861362,VS0,VE0',
+29 silly get     vary: 'Accept-Encoding' } ]
+30 verbose get saving browser-sync to C:\Users\agney\AppData\Roaming\npm-cache\registry.npmjs.org\browser-sync\.cache.json
+31 verbose correctMkdir C:\Users\agney\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+32 silly addNameTag next cb for browser-sync with tag latest
+33 silly addNamed browser-sync@2.16.0
+34 verbose addNamed "2.16.0" is a plain semver version for browser-sync
+35 silly mapToRegistry name browser-sync
+36 silly mapToRegistry using default registry
+37 silly mapToRegistry registry https://registry.npmjs.org/
+38 silly mapToRegistry data Result {
+38 silly mapToRegistry   raw: 'browser-sync',
+38 silly mapToRegistry   scope: null,
+38 silly mapToRegistry   name: 'browser-sync',
+38 silly mapToRegistry   rawSpec: '',
+38 silly mapToRegistry   spec: 'latest',
+38 silly mapToRegistry   type: 'tag' }
+39 silly mapToRegistry uri https://registry.npmjs.org/browser-sync
+40 verbose addRemoteTarball https://registry.npmjs.org/browser-sync/-/browser-sync-2.16.0.tgz not in flight; adding
+41 verbose addRemoteTarball [ 'https://registry.npmjs.org/browser-sync/-/browser-sync-2.16.0.tgz',
+41 verbose addRemoteTarball   '973e129a5e02cbfdf4cb6bf8bf90b10d8abd34e5' ]
+42 info retry fetch attempt 1 at 10:17:54 PM
+43 info attempt registry request try #1 at 10:17:54 PM
+44 http fetch GET https://registry.npmjs.org/browser-sync/-/browser-sync-2.16.0.tgz
+45 http fetch 200 https://registry.npmjs.org/browser-sync/-/browser-sync-2.16.0.tgz
+46 info retry will retry, error on last attempt: Error: read ECONNRESET
+47 info retry will retry, error on last attempt: Error: read ECONNRESET
+48 silly fetchAndShaCheck shasum 973e129a5e02cbfdf4cb6bf8bf90b10d8abd34e5
+49 verbose stack Error: shasum check failed for C:\Users\agney\AppData\Local\Temp\npm-9168-f65723a3\registry.npmjs.org\browser-sync\-\browser-sync-2.16.0.tgz
+49 verbose stack Expected: 973e129a5e02cbfdf4cb6bf8bf90b10d8abd34e5
+49 verbose stack Actual:   861d158aabf87835e159cd5e9c9df125e7cb64ac
+49 verbose stack From:     https://registry.npmjs.org/browser-sync/-/browser-sync-2.16.0.tgz
+49 verbose stack     at S:\node.js\node_modules\npm\node_modules\sha\index.js:25:8
+49 verbose stack     at ReadStream.<anonymous> (S:\node.js\node_modules\npm\node_modules\sha\index.js:72:7)
+49 verbose stack     at emitNone (events.js:72:20)
+49 verbose stack     at ReadStream.emit (events.js:166:7)
+49 verbose stack     at endReadableNT (_stream_readable.js:913:12)
+49 verbose stack     at nextTickCallbackWith2Args (node.js:442:9)
+49 verbose stack     at process._tickCallback (node.js:356:17)
+50 verbose cwd E:\Media\Bootstrap
+51 error Windows_NT 10.0.10586
+52 error argv "S:\\node.js\\node.exe" "S:\\node.js\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save-dev" "browser-sync"
+53 error node v4.4.5
+54 error npm  v2.15.5
+55 error shasum check failed for C:\Users\agney\AppData\Local\Temp\npm-9168-f65723a3\registry.npmjs.org\browser-sync\-\browser-sync-2.16.0.tgz
+55 error Expected: 973e129a5e02cbfdf4cb6bf8bf90b10d8abd34e5
+55 error Actual:   861d158aabf87835e159cd5e9c9df125e7cb64ac
+55 error From:     https://registry.npmjs.org/browser-sync/-/browser-sync-2.16.0.tgz
+56 error If you need help, you may report this error at:
+56 error     <https://github.com/npm/npm/issues>
+57 verbose exit [ 1, true ]
