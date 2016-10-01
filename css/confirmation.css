@@ -1,0 +1,6 @@
+.form-inline label {
+	display: block;
+}
+.form-inline .btn{
+	vertical-align: bottom;
+}
