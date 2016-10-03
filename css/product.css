@@ -48,3 +48,10 @@ div[class$="group"] button {
 	display: inline;
 	margin-left: 5px;
 }
+.image-background {
+	background-color: rgb(247,247,247);
+}
+.image-background img {
+	margin: 0 auto;
+	display: block;
+}

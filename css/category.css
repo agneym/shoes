@@ -52,3 +52,7 @@ div[class$="group"] button {
 	display: block;
 	margin-top: 15px;
 }
+
+.tab-interface {
+	margin: 20px 0;
+}
