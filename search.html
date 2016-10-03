@@ -31,7 +31,7 @@
             <header>
                 <div class="page-header row">
                     <div class="col-md-3">
-                        <img class="header-item" alt="logo" src="http://placehold.it/300x200"/>
+                        <img class="header-item" alt="logo" src="img/logo.png"/>
                     </div>
                     <div class="col-md-4">
                         <div class="row text-center">
@@ -49,7 +49,7 @@
                         <div class="row text-center content">
                             <form name="search" method="GET" action="search.html">
                                 <div class="input-group col-md-12">
-                                    <input type="text" placeholder="Enter Search Term" name="q" class="form-control"/>
+                                    <input type="text" id="searchbox" placeholder="Enter Search Term" name="q" class="form-control"/>
                                     <span class="input-group-btn">
                                         <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span> Search</button>
                                     </span>
@@ -197,14 +197,15 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="js/filter.min.js"></script>
+        <script src="js/shoes.js"></script>
         <script src="js/search.js"></script>
 
         <script id="search-template" type="text/html">
             <div class="col-md-4 col-sm-12 hero-feature">
-                <a href="product.html" class="thumbnail">
-                    <img src="<% image %>" alt="<% name %>"/>
+                <a href="product.html?id=<%= id %>" class="thumbnail">
+                    <img src="<%= image %>" alt="<%= name %>"/>
                     <div class="caption">
-                         <h3><% name %></h3>
+                         <h3><%= name %></h3>
                     </div>
                 </a>
              </div>

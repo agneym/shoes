@@ -12,17 +12,3 @@ var getUrlParameter = function getUrlParameter(sParam) {
         }
     }
 };
-$(function(){
-	var searchTerm = getUrlParameter('q');
-	$('#searchbox').val(searchTerm);
-	var FJS = FilterJS(shoes, '#search-results', {
-	  template: '#search-template',
-	  filter_on_init: true, // Default filter_on_init is false
-	  search: { ele: '#searchbox' },
-	  callbacks: {
-	    afterFilter: function(result){
-	      	console.log("Complete");
-	     }
-   		}
-	});
-});

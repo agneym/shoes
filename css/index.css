@@ -10,13 +10,24 @@
   margin-bottom: 120px;
 }
 .thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
+    padding: 0 0 0px 0;
+    border: solid #C0C0C0;
     border-radius: 0;
+    background-color: rgb(247,247,247)
 }
 
 .thumbnail img {
     width: 100%;
     height: 100%;
     margin-bottom: 10px;
+}
+.product img {
+  width: 75%;
+}
+.jumbotron {
+  background: url('http://wallpaper.zone/img/1961762.jpg');
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  color: #C0C0C0;
 }
