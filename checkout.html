@@ -13,11 +13,11 @@
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="css/main.css"/>
-        <link rel="stylesheet" href="css/product.css"/>
+        <link rel="stylesheet" href="css/checkout.css"/>
         <link rel="stylesheet" type="text/css" href="css/cloudzoom.css" />
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -26,25 +26,23 @@
 
         <!-- Add your site or application content here -->
 
-        
+
         <body>
 
             <header>
                 <div class="page-header row">
                     <div class="col-md-3">
-                        <a href="index.html">
-                            <img class="header-item" alt="logo" src="img/logo.png"/>
-                        </a>
+                        <img class="header-item" alt="logo" src="http://placehold.it/300x200"/>
                     </div>
                     <div class="col-md-4">
                         <div class="row text-center">
                             <div class="col-md-4">
                                 <a href-"#!">1.88.888.8888</a>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 header-item">
                                 <a href-"#!">Live Chat</a>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 header-item">
                                 <a href-"#!">My Account</a>
                             </div>
                         </div>
@@ -89,76 +87,110 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-8">
-                            <ol class="breadcrumb">
-                              <li><a href="index.html">Home</a></li>
-                              <li id="product-category"><a href="category.html">Category</a></li>
-                              <li><a href="#!">Sub Category</a></li>
-                              <li class="active">Product</li>
-                            </ol>
-                            <h1 id="product-title">Product Title</h1>
-                            <div class="image-background">
-                                
-                            </div>
+                            <h1>Your Shopping Cart</h1>
+                            <form>
+                              <div class="form-group">
+                                <input type="text" class="form-control" id="CheckoutMethod" placeholder="Checkout Method">
+                                </div>
+                                <div class="form-group">
+                                  <input type="text" class="form-control" id="BillingAddress" placeholder="Billing Address">
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="ShippingAddress" placeholder="Shipping Address">
+                                    </div>
+                                    <div class="form-group">
+                                      <input type="text" class="form-control" id="ShippingMethod" placeholder="Shipping Method">
+                                      </div>
+                                      <button type="submit" class="btn btn-default">Submit</button>
+                                    </form>
+                                    </div>
+
+
+                        <div style="border: 0px solid #f5f5f5;" class = "col-md-4 side-details">
+                          <div class="row">
+                            <div class="col-sm-4"><img src="img\doc\card1.png" alt="Card Logo" class="img-thumbnail"></div>
+                           <div class="col-sm-4"><img src="img\doc\card1.png" alt="Card Logo" class="img-thumbnail"></div>
+                           <div class="col-sm-4"><img src="img\doc\card1.png" alt="Card Logo" class="img-thumbnail"></div>
+                          </div>
+                          <br>
+                        </div>
+                        <div class="col-md-4 side-details">
+                          <h1>Order Summary</h1>
+                          <hr>
+                            <div class="row">
+                              <div class="col-md-5">
+                            <img class="header-item" alt="logo" src="http://placehold.it/100x100"/>
+                          </div>
+                          <div class="col-md-7">
+                            <h3>Puma Shoes</h3>
+                            <h4>UPC :   1304014113013341</h4>
+                            <h4>Qty : 1</h4>
+                            <h4>Item Price : 249.99$</h4>
+                            <h4><a href="#!">Remove</a><h4>
+                          </div>
                         </div>
 
-                        <div class="col-md-4 side-details">
-                            <br/>
-                            <div class="price text-center">
-                                <h1 class="main-price">$ 9.99</h1>
-                                <p id="real-price"><s>$12.99</s></p>
-                                <p class="text-center">You save 3$ (23%)</p>
-                            </div>
-                            <br/><br/>
-                            <p class="text-center">
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                4.0 stars (33)
-                            </p>
-                            <br/><br/>
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <ul>
-                                <li>Benefit 1/Attribute</li>
-                                <li>Benefit 2/Attribute</li>
-                                <li>Benefit 3/Attribute</li>
-                                <li>Benefit 4/Attribute</li>
-                            </ul>
-                            <p>Select Size</p>
-                            <div class="btn-group size-group" role="group" aria-label="...">
-                              <button type="button" class="btn btn-default">S</button>
-                              <button type="button" class="btn btn-default">M</button>
-                              <button type="button" class="btn btn-default">L</button>
-                            </div>
-                            <p>Select Color</p>
-                            <div class="btn-group color-group" role="group" aria-label="...">
-                              <button type="button" class="btn btn-default">S</button>
-                              <button type="button" class="btn btn-default">M</button>
-                            </div>
-                            <br/>
-                            <button class="btn-lg cart-btn btn-default" type="submit" onclick="document.location.href='checkout.html';">Add to Cart<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
-                            <br/>
-                            <p class="text-center">Secure Shopping Guarantee</p>
+                          <hr/>
+                          <div class="row">
+                          <div class="col-md-5">
+                            <img class="header-item" alt="logo" src="http://placehold.it/100x100"/>
+                          </div>
+                          <div class="col-md-7">
+                            <h3>Nike Shoes</h3>
+                            <h4>UPC :   1305064113016685</h4>
+                            <h4>Qty : 1</h4>
+                            <h4>Item Price : 279.99$</h4>
+                            <h4><a href="#!">Remove</a><h4>
+                          </div>
+                          </div>
+
+                          <hr/>
+                          <div class="row">
+                          <div class="col-md-5">
+                          </div>
+                          <div class="col-md-7">
+                          <table>
+                          <tr><td><h4>SUBTOTAL:  </h4></td> <td> 529.98$</td></tr>
+                          <tr><td><h4>SHIPPING:  </h4></td> <td> 8.99$</td></tr>
+                          <tr><td><h4>DISCOUNT:  </h4></h4> <td> 52.99$</td></tr>
+                          <tr><td><h4>SALESTAX:  </h4></td> <td> 75.46$</td></tr>
+                          </table>
+                          </div>
+                          </div>
+
+                          <hr/>
+                          <div class="row">
+                          <div class="col-md-5">
+                          </div>
+                          <div class="col-md-7">
+                            <tr><h4><td>ORDER TOTAL: </td> <td>561.43$</td></h4></tr>
+                          </div>
+                          </div>
+
+
                         </div>
                     </div>
 
                     <div class="row lower-pane">
-                        <div class="col-md-8 tab-interface">
-                            <ul class="nav nav-tabs" id="tabs" role="tablist">
-                                <li role="presentation" class="active"><a href="#overview" aria-controls="overview" role="tab" data-toggle="tab">Overview</a></li>
-                                <li role="presentation"><a href="#specs" aria-controls="specs" role="tab" data-toggle="tab">Specs</a></li>
-                                <li role="presentation"><a href="#shipping" aria-controls="shipping" role="tab" data-toggle="tab">Shipping</a></li>
-                                <li role="presentation"><a href="#support" aria-controls="support" role="tab" data-toggle="tab">Support</a></li>
-                            </ul>
+                        <div class="col-md-8 tab-interfac">
+                          <form>
+                              <div class="input-group col-md-12">
+                                  <input type="text" placeholder="Promo Code (Optional)" name="promo" class="form-control"/>
+                                  <span class="input-group-btn">
+                                      <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span> Apply</button>
+                                  </span>
+                              </div>
+                          </form>
+                        </hr>
+                        <div class="row">
+                          <div class="col-md-8">
+                          </div>
+                          <div class="col-md-5">
+                          <div class="col-sm-4"><img src="img\doc\card1.png" alt="Card Logo" class="img-thumbnail"></div>
+                         <div class="col-sm-4"><img src="img\doc\card1.png" alt="Card Logo" class="img-thumbnail"></div>
+                         <div class="col-sm-4"><img src="img\doc\card1.png" alt="Card Logo" class="img-thumbnail"></div>
+                        </div>
 
-                              <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane active in fade" id="overview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nesciunt natus dolorem consequatur pariatur inventore itaque voluptatum architecto. Autem modi repellendus hic possimus facilis exercitationem, explicabo quod fugit. Deleniti, ducimus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere omnis ratione eum minima placeat accusamus voluptas repellat consectetur consequuntur, aspernatur unde harum ea ut fugit. Quidem, ducimus voluptates. Assumenda, dicta.</div>
-                                <div role="tabpanel" class="tab-pane fade" id="specs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus illo, placeat dolore dolor ab impedit possimus nihil vitae, laboriosam totam natus recusandae, provident numquam velit saepe suscipit quam. Doloremque, accusantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, voluptatum tempora voluptate sed, obcaecati ab incidunt expedita libero, tempore ratione beatae! Officiis hic adipisci fugit, soluta. Quia totam cupiditate vel!</div>
-                                <div role="tabpanel" class="tab-pane fade" id="shipping">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil enim, debitis recusandae possimus, dolore ullam explicabo veritatis repellendus, cum blanditiis nostrum labore animi accusamus, quia dolor. Accusamus sunt, aperiam eos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam reprehenderit illum hic perferendis, voluptates. Eum molestias ipsum nemo id aliquid, cumque est dolore vitae nisi, non tempora fugiat, placeat excepturi.</div>
-                                <div role="tabpanel" class="tab-pane fade" id="support">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, perspiciatis molestiae voluptate fugiat facilis natus ut necessitatibus expedita in id vitae quidem accusamus itaque tempora rem, sit dignissimos consequuntur repellat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ipsa itaque quisquam. Voluptate at, laborum dolor velit. Accusantium nobis repudiandae doloribus ipsam quos, accusamus ex non iure eum fuga excepturi.</div>
-                            </div>
                             <h1>Customer Reviews</h1>
                             <div class="list-group">
                                 <div class="list-group-item">
@@ -292,8 +324,8 @@
                         <div class="col-md-offset-3 text-center col-md-5">
                             <span>
                                 <br/>
-                                <a href="#!" class="bottom-row">Terms of Use</a> | 
-                                <a href="#!" class="bottom-row">Privacy Policy</a> | 
+                                <a href="#!" class="bottom-row">Terms of Use</a> |
+                                <a href="#!" class="bottom-row">Privacy Policy</a> |
                                 <a href="#!" class="bottom-row">Mobile Site</a>
                             </span>
                             <p>2016 Copyright by Company Name, LLC. All Rights Reserved</p>
@@ -303,17 +335,26 @@
             </footer>
         </body>
 
-        
-       
+
+
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="js/cloudzoom.js"></script>
-        <script src="js/shoes.js"></script>
-        <script src="js/product.js"></script>
-        
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
 </html>
-
-
-        
