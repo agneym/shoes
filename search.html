@@ -61,7 +61,7 @@
                     </div>
                     <div class="col-md-3">
                         <a href="#!">
-                            <img src="http://placehold.it/300x200"/>
+                            <img src="http://previews.123rf.com/images/kobfujar/kobfujar1306/kobfujar130600128/20299345-Clearance-Sale-up-to-70-Percents-Promotion-Label-Stock-Photo.jpg" class="offers"/>
                         </a>
                     </div>
                     <div class="col-md-2 cart text-center">
@@ -73,11 +73,10 @@
                   <div class="container-fluid">
                         <div class="collapse navbar-collapse">
                             <ul class="nav navbar-nav">
-                                <li><a href="#!">Category 1</a></li>
-                                <li><a href="#!">Category 2</a></li>
-                                <li><a href="#!">Category 3</a></li>
-                                <li><a href="#!">Category 4</a></li>
-                                <li><a href="#!">Category 5</a></li>
+                                <li><a href="category.html?cat=men">Men's Shoes</a></li>
+                                <li><a href="category.html?cat=women">Women's Shoes</a></li>
+                                <li><a href="category.html?cat=boys">Boy's Shoes</a></li>
+                                <li><a href="category.html?cat=girls">Girl's Shoes</a></li>
                             </ul>
                     </div>
                 </nav>
@@ -85,7 +84,7 @@
                 <nav class="navbar navbar-default">
                   <div class="collapse navbar-collapse">
                     <div class="row text-center content">
-                            <h3>Shipping or Return Risk Reversal</p>
+                        <h3>Shipping or Return Risk Reversal</p>
                     </div>
                   </div>
                 </nav>
@@ -95,38 +94,102 @@
             <div class="row">
               <div class="col-md-2 side-details">
                   <br/>
-                      <h3>Category</h3>
-                      <ul>
-                          <li>Sub Category 1</li>
-                          <li>Sub Category 2</li>
-                          <li>Sub Category 3</li>
-                          <li>Sub Category 4</li>
-                          <li>Sub Category 5</li>
-                      </ul>
+                    <h3>Category</h3>
+                    <div id="category">
+                        <div class="checkbox">
+                            <label>
+                            <input type="checkbox" value="all">
+                            All
+                          </label>
+                          <br/>
+                          <label>
+                            <input type="checkbox" value="Men">
+                            Men's Shoes
+                          </label>
+                          <br/>
+                          <label>
+                            <input type="checkbox" value="Women">
+                            Women's Shoes
+                          </label>
+                          <br/>
+                          <label>
+                            <input type="checkbox" value="Boys">
+                            Boys's Shoes
+                          </label>
+                          <label>
+                            <input type="checkbox" value="Girls">
+                            Girls's Shoes
+                          </label>
+                        </div>
+                    </div>
 
                       <h3>Style</h3>
-                       <ul>
-                          <li>Style 1</li>
-                          <li>Style 2</li>
-                          <li>Style 3</li>
-                          <li>Style 4</li>
-                          <li>Style 5</li>
-                        </ul>
+                       <div id="style">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="all">
+                                All
+                              </label>
+                            <br/>
+                            <label>
+                                <input type="checkbox" value="Training Shoes">
+                                Training Shoes
+                            </label>
+                            <br/>
+                            <label>
+                                <input type="checkbox" value="Sneakers">
+                                Sneakers
+                            </label>
+                            <br/>
+                            <label>
+                                <input type="checkbox" value="Formal Shoes">
+                                Formal Shoes
+                            </label>
+                        </div>
+                        </div>
+                            
 
                       <h3>Brand</h3>
-                        <ul>
-                          <li>Brand 1</li>
-                          <li>Brand 2</li>
-                          <li>Brand 3</li>
-                          <li>Brand 4</li>
-                          <li>Brand 5</li>
-                        </ul>
-
-                        <h3><a href="#!">View All</a></h3>
+                      <div id="brand">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="all">
+                            All
+                          </label>
+                          <br/>
+                          <label>
+                            <input type="checkbox" value="Nike">
+                            Nike
+                          </label>
+                          <br/>
+                          <label>
+                            <input type="checkbox" value="Puma">
+                            Puma
+                          </label><br/>
+                          <label>
+                            <input type="checkbox" value="Adidas">
+                            Adidas
+                          </label><br/>
+                          <label>
+                            <input type="checkbox" value="Asics">
+                            Asics
+                          </label><br/>
+                          <label>
+                            <input type="checkbox" value="Louis Phillippe">
+                            Louis Phillipe
+                          </label><br/>
+                          <label>
+                            <input type="checkbox" value="Sketchers">
+                            Sketchers
+                          </label>
+                        </div>
+                        </div>
+                        <h3><a href="search.html?q=">View All</a></h3>
+                    <br/>
+                </div>
+                <div class="col-md-10" id="search-results">
+                </div>
             </div>
-            <div class="col-md-10" id="search-results">
-            </div>
-        </div>
 
                 
             </main>
@@ -185,7 +248,7 @@
                                 <a href="#!" class="bottom-row">Privacy Policy</a> |
                                 <a href="#!" class="bottom-row">Mobile Site</a>
                             </span>
-                            <p>2016 Copyright by Shoes, LLC. All Rights Reserved</p>
+                            <p>2016 &copy; Phoenix, LLC. All Rights Reserved</p>
                         </div>
                     </div>
                </div>
@@ -201,6 +264,7 @@
         <script src="js/filter.min.js"></script>
         <script src="js/shoes.js"></script>
         <script src="js/search.js"></script>
+        <script src="js/simpleCart.min.js"></script>
 
         <script id="search-template" type="text/html">
             <div class="col-md-4 col-sm-12 hero-feature">

@@ -10,10 +10,16 @@ $(document).ready(function(){
     	$( this ).html('<a href="product.html?id='+shoes[i].id+'" class="thumbnail">\
                             <img src="'+shoes[i].image+'"/>\
                             <div class="caption">\
-                                 <h3>'+shoes[i].name+'</h3>\
+                                 <h3>'+shoes[i].name+' <span class="label product-label label-primary">'+shoes[i].attr+'</span></h3>\
                             </div>\
                         </a>;');
         i++;
 
+    });
+    $('#carousel-generic').mouseover(function() {
+        $('.carousel').carousel('pause');
+    });
+    $('#carousel-generic').mouseleave(function() {
+        $('.carousel').carousel('cycle');
     });
 });

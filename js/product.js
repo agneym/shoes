@@ -14,13 +14,14 @@ var getUrlParameter = function getUrlParameter(sParam) {
 };
 $(function(){
     var productId = getUrlParameter('id');
+
     for(i=0;i<shoes.length;i++){
         if(shoes[i].id==productId) {
             $('.image-background').html('<img class = "cloudzoom" src = "'+shoes[i].image+'"\
                                  data-cloudzoom = "zoomImage: \''+shoes[i].image+'\'" />');
             $('#product-title').text(shoes[i].name);
             $(".main-price").text(shoes[i].price);
-            $('#product-category').html('<a href="category.html">'+shoes[i].category+'</a>');
+            $('#product-category').html('<a href="category.html?cat='+shoes[i].category.toLowerCase()+'">'+shoes[i].category+'</a>');
             $("#overview").text(shoes[i].desc);
         }
     }
@@ -29,5 +30,4 @@ $(function(){
       e.preventDefault()
       $(this).tab('show')
     });
-
 });

@@ -56,3 +56,8 @@ div[class$="group"] button {
 .tab-interface {
 	margin: 20px 0;
 }
+#carousel-generic {
+	background-color: #F0F8FF;
+	margin-bottom: 10px;
+	margin-top: 0px;
+}

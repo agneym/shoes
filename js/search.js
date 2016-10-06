@@ -19,6 +19,9 @@ $(function(){
 	  template: '#search-template',
 	  filter_on_init: true, // Default filter_on_init is false
 	  search: { ele: '#searchbox' },
+	  criterias: [ {field: 'brand', ele: '#brand input:checkbox',all: 'all'},
+	  				{field: 'category', ele: '#category input:checkbox',all: 'all'},
+	  				{field: 'style', ele: '#style input:checkbox',all: 'all'} ],
 	  callbacks: {
 	    afterFilter: function(result){
 	      	console.log("Complete");

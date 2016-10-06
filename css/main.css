@@ -1,3 +1,6 @@
+*{
+  margin: 0px;
+}
 html {
   height: 100%;
 }
@@ -8,13 +11,13 @@ body {
 }
 main {
   flex: 1;
-  padding: 20px;
+  padding: 0px 20px 20px 20px;
 }
 .footer {
   padding: 20px;
   background-color: #000000;
 }
-footer a:not(.bottom-row){
+footer a{
   display: block;
 }
 .cart .glyphicon {
@@ -25,5 +28,25 @@ nav li {
 }
 .header-item{
   width: 60%;
-  padding-left: 20px;
+  margin: 0 auto;
+  display: block;
+}
+.offers {
+  float: right;
+  width: 80%;
+}
+
+.social-media img {
+  padding: 8px;
+  -webkit-transition: width 3s; /* Safari 3.1 to 6.0 */
+    transition: width 3s;
+}
+
+.social-media a {
+  display: inline;
+}
+
+.social-media img:hover {
+  width: 15%;
+
 }

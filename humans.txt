@@ -1,15 +1,50 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
 
-# TEAM
+                            
+/* TEAM */
 
-    <name> -- <role> -- <twitter>
+                            
+Name: Mazahir Haroon.
+                        
+Mail: mazahirharoon@gmail.com.
 
-# THANKS
 
-    <name>
+Name: Boy With Silver Wings.
+ 
+Mail: agney.menons@live.com
+                            
 
-# TECHNOLOGY COLOPHON
+Name: Akkshay Lawrence.
+ 
+Mail: 
+                 
+                        
+						
 
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+							
+/* THANKS */
+
+							
+Name: Excel 2016
+
+Name: MacFaydens
+
+						
+                 
+                       
+                        
+
+                            
+/* SITE */
+
+                            
+Last update: 2016/10/07
+
+                            
+Standards: HTML5, CSS3, Bootstrap
+
+                            
+Components: Modernizr, jQuery, etc.
+
+                            
+Software: Sublime Text
+   
